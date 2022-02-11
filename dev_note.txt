@@ -1,0 +1,7 @@
+1.自定义布局时对child组件必须estimateSize 进行绘制才能展现
+2.自定义布局时如果过大也不会显示，因为没有实现onArrange
+3.动画xml不支持注释。不清楚是否xml都不支持
+4.必须先runSerially后设置setDuration才有效
+    animatorGroup.runSerially(action1, action2);
+    animatorGroup.setLoopedCount(AnimatorValue.INFINITE);
+    animatorGroup.setDuration(1500);
